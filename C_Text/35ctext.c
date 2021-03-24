@@ -11,12 +11,15 @@ main()
     }
     printf("Enter The Location Where A New Value To Be Stored:\n");
     scanf("%d",&location);
-    printf("Enter The New Value:\n");
+    printf("Enter The New Value:");
     scanf("%d",&new_value);
-    for(i=n-1;i<=location;i--)
+    for(i=n-1;i<=location-1;i--)
     {
         Array[i+1]=Array[i];
     }
-    Array[location]=new_value;
-    printf("%d",Array);
+    Array[location-1]=new_value;        //Work on Progress.
+    for(int r=0;r<n+1;r++)
+    {
+        printf("%d\n",Array[r]);
+    }
 }
