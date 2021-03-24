@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>                 //Reversing an array of size num.
-int main()
+main()
 {
     int num, *arr;
     printf("Enter the No.of elements to be stored in array:");
@@ -20,5 +20,4 @@ int main()
     
     for(int i = 0; i < num; i++)
         printf("%d ", *(arr + i));
-    return 0;
 }
