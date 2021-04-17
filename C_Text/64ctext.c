@@ -1,4 +1,4 @@
-#include <stdio.h>                          //Call by reference.
+#include <stdio.h>                           //Call by reference.
 void sumandavg(int a, int b, int *sum, float *avg)
 {
     *sum = a + b;
