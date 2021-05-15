@@ -23,7 +23,7 @@ public class problemjava7 {
         float total_marks_obtained_in_5_subjects = mrk1 + mrk2 + mrk3 + mrk4 + mrk5;
         System.out.println("The Total is:");
         System.out.println(total_marks_obtained_in_5_subjects);
-        float percentage = (total_marks_obtained_in_5_subjects*100)/500;
-        System.out.println("The Percentage of " + name + " in 5 subjects is:" + percentage);
+        float percentage = (total_marks_obtained_in_5_subjects/500)*100;
+        System.out.println("The Percentage of " + name + " in 5 subjects is: " + percentage+"%");
     }
 }
