@@ -28,7 +28,7 @@ public class cwh_practice_qstns_19 {
                 System.out.println(num + " is not present inside the array.");
             System.out.println("Want to Check again:(y/n)");
             String ch = scan.next();
-            if(!ch.equals("y"))
+            if (!ch.equals("y"))
                 break;
         }
     }
