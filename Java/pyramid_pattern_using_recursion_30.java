@@ -20,16 +20,16 @@ public class pyramid_pattern_using_recursion_30 {
         printing_stars(star - 1);
     }
 
-    static void pattern(int column,int n,int star_rep) {
-        if (column == pyramid_tip-n) {
-            printing_stars(stars+star_rep);
+    static void pattern(int column, int n, int star_rep) {
+        if (column == pyramid_tip - n) {
+            printing_stars(stars + star_rep);
             return;
         } else
             System.out.print(" ");
-        pattern(column+1,n,star_rep);
+        pattern(column + 1, n, star_rep);
     }
 
-    static void pyramid(int h, int c,int n,int star_rep) {
+    static void pyramid(int h, int c, int n, int star_rep) {
         if (h == 0)
             return;
         pattern(c, n, star_rep);
@@ -40,6 +40,7 @@ public class pyramid_pattern_using_recursion_30 {
     public static void main(String[] args) {
         System.out.println("Enter the height of the Pyramid:");
         int height = object.nextInt();
-        pyramid(height, columns,n,star_rep);
+        pyramid_tip = height;
+        pyramid(height, columns, n, star_rep);
     }
 }
