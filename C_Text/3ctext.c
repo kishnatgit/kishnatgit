@@ -1,7 +1,7 @@
 #include<stdio.h>
 main()
 {
-    char ss='A';
+    char ss='z';
     printf("  %c =",ss);
     printf(" %d  ",ss);
 }

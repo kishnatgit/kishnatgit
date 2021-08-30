@@ -2,7 +2,7 @@
 main()
 {
     int sum;                                        //Displaying all the perfect numbers from 1 to 100
-    for(int n=1;n<=1000;n++)
+    for(int n=1;n<=10000;n++)
     {
         sum=0;
         for(int i=1;i<n;i++)
