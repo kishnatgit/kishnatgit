@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	background: url(WallpaperDog.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.new{
+	background: url(anchor-lee-kO1G3neRA2o-unsplash.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.navbar .logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	color: black;
+	font-size: 70px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+}
+.center h2{
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+.container{
+	padding-top: 79px;
+}
+.row {
+	text-align: left;
+}
+.set{
+	padding-right: 500px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footer {
+	background-color: #2f2f2f;
+	padding-top: 40px;
+	padding-bottom: 50px; 
+}
+.footer_set{
+	/* padding-right: 500px; */
+	padding-right: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footer p {
+	font-size: 17;
+	color: white;
+}
+#footer h4 {
+	font-size: 22;
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+.row2{
+	text-align: right;
+}
