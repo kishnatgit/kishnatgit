@@ -28,5 +28,6 @@ static int call(int x,int y){
         sum2=call(a1,b1); 
         System.out.println(sum1);
         System.out.println(sum2);
+        scan.close();
     }
 }    

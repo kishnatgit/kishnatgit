@@ -4,9 +4,8 @@
  */
 import java.util.Scanner;
 
-public class Recursion_26 {
+public class jv_26_Recursion {
     static int factorial(int num) {
-        int fact = 0;
         if (num == 0 || num == 1)
             return 1;
         else
@@ -27,5 +26,6 @@ public class Recursion_26 {
         int num = scan.nextInt();
         System.out.println("The Factorial of " + num + " using recursion is " + factorial(num) + ".");
         System.out.println("The Factorial of " + num + " using iteration is " + factorial_iterative(num) + ".");
+        scan.close();
     }
 }

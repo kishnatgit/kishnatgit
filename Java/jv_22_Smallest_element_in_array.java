@@ -21,5 +21,6 @@ public class jv_22_Smallest_element_in_array {
                 min = i;
         }
         System.out.println("The minimun in Array is:- "+min);
+        scan.close();
     }
 }

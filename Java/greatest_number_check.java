@@ -14,5 +14,6 @@ public class greatest_number_check {
                 greatest = num[i];
         }
         System.out.println("The Greatest Number in the Array is:-" + greatest);
+        input.close();
     }
 }

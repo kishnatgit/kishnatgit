@@ -1,10 +1,5 @@
 import java.util.Scanner;
 
-/**
- * mathematical_table_using_recursion_28
- */
-import java.util.Scanner;
-
 public class jv_28_mathematical_table_using_recursion {
     static Scanner object = new Scanner(System.in);
     static int i = 1;

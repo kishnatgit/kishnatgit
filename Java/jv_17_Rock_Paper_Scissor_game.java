@@ -44,5 +44,6 @@ public class jv_17_Rock_Paper_Scissor_game {
             if (!play_again.equals("y"))
                 break;
         }
+        scan.close();
     }
 }

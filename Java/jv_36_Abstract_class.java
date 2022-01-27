@@ -1,5 +1,5 @@
 abstract class phone {
-    public void phone() {
+    public phone() {
         System.out.println("Constructor of Phone class.");
     }
 
@@ -12,8 +12,26 @@ abstract class phone {
 }
 
 class vivo extends phone {
+    @Override
     void ringing() {
-        System.out.println("Vivo is Ringing...");
+        System.out.println("\nVivo\n\nVivo is Ringing...");
+    }
+
+    public void phone() {
+
+    }
+}
+
+class Oppo extends phone {
+    public void Vibrating() {
+        System.out.println("\nOppo\n\nYour Phone is Vibrating....\n\n");
+    }
+
+    // If not overridden ringing() class Oppo should be declared as an abstract
+    // class.
+    @Override
+    public void ringing() {
+        System.out.println("Your Phone is Ringing....");
     }
 }
 
@@ -26,5 +44,7 @@ public class jv_36_Abstract_class {
         obj.ringing();
         obj.greet();
         obj.phone();
+        Oppo op = new Oppo();
+        op.Vibrating();
     }
 }

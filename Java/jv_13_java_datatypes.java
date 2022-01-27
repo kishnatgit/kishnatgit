@@ -19,6 +19,6 @@ public class jv_13_java_datatypes {
             catch (Exception e) {
                 System.out.println(scan.nextLine()+" -Can't Be Fitted Anywhere.");
             }
-        }
+        } scan.close();
     }
 }

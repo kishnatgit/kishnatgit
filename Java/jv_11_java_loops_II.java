@@ -3,8 +3,6 @@ import java.util.Scanner;
 /**
  * java_loops_II_11
  */
-
-import java.util.Scanner;
 public class jv_11_java_loops_II {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -19,6 +17,7 @@ public class jv_11_java_loops_II {
                 System.out.print(ans+" ");
             }
             System.out.println();
+            sc.close();
         }        
     }
 }

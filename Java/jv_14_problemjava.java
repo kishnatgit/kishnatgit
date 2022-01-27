@@ -25,5 +25,6 @@ public class jv_14_problemjava {
                 int s = scan.nextInt();
                 float answer = (float)((Math.pow(v, 2) - Math.pow(u, 2))/(2*a*s));
                 System.out.println(answer);
+                scan.close();
     }
 }

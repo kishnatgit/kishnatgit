@@ -15,10 +15,10 @@ class game {
     void TakeInput() {
         System.out.println("Enter Your Guess:");
         TakeInput = scan.nextInt();
-        game();
+        rungame();
     }
 
-    void game() {
+    public void rungame() {
         if (TakeInput == random) {
             System.out.println("You have choosen the right number.");
         } else if (TakeInput > random) {
@@ -51,6 +51,7 @@ public class jv_34_guess_the_number_game {
         gm.TakeInput();
         // gm.count=10; //Cannot access a private variable of game class.
         // gm.game();
-        System.out.println("It took " + gm.count() + " times to choose the correct number.");
+        System.out.println("It took you " + gm.count() + " times to choose the correct number.");
+        scan.close();
     }
 }

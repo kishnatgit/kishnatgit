@@ -3,7 +3,7 @@
  * problemjava7
  */
 import java.util.Scanner;
-
+//comment
 public class jv_7_problemjava {
 
     public static void main(String[] args) {
@@ -25,5 +25,6 @@ public class jv_7_problemjava {
         System.out.println(total_marks_obtained_in_5_subjects);
         float percentage = (total_marks_obtained_in_5_subjects/500)*100;
         System.out.println("The Percentage of " + name + " in 5 subjects is: " + percentage+"%");
+        sch.close();
     }
 }

@@ -14,5 +14,6 @@ public class jv_8_hackerranksolution {
         System.out.println("String: " + str);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
+        scan.close();
     }
 }

@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.naming.ServiceUnavailableException;
-
 /**
  * pyramid_pattern_using_recursion_30
  */

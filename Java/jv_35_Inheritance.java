@@ -29,6 +29,6 @@ class Derived2 extends Derived1 {
 public class jv_35_Inheritance {
 
     public static void main(String[] args) {
-        Base d2 = new Derived2(2005, 3006, 4007);
+        new Derived2(2005, 3006, 4007);
     }
 }

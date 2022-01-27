@@ -4,7 +4,7 @@
  */
 import java.util.Scanner;
 
-public class string_functions_15 {
+public class jv_15_string_functions {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -16,5 +16,6 @@ public class string_functions_15 {
         System.out.println("In LowerCase: " + New_String.toLowerCase());
         /// toUppercase().
         System.out.println("In Uppercase: " + New_String.toUpperCase());
+        scan.close();
     }
 }

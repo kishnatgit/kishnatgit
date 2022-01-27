@@ -25,5 +25,6 @@ public class jv_27_Fibonacci_series {
         int n = obj.nextInt();
         System.out.print(n1 + " " + n2);
         fibonacci(n - 2);
+        obj.close();
     }
 }

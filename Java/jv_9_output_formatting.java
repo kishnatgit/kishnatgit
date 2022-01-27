@@ -13,5 +13,6 @@ public class jv_9_output_formatting {
                             /// Intergers of two digits printed in three digits.
         }
         System.out.println("================================");
+        Scan.close();
     }
 }

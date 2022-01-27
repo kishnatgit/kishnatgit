@@ -55,5 +55,6 @@ public class jv_24_method_overloading {
         int sm4 = scan.nextInt();
         // Method Overloading.
         same(sm3, sm4);
+        scan.close();
     }
 }

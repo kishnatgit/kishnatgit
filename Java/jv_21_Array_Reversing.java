@@ -1,8 +1,4 @@
 
-/**
- * Array_Reversing_21
- */
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class jv_21_Array_Reversing {
@@ -27,5 +23,6 @@ public class jv_21_Array_Reversing {
             System.out.print(i + ", ");
         }
         System.out.print("}");
+        scan.close();
     }
 }

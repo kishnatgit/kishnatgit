@@ -27,5 +27,6 @@ public class jv_16_leap_year {
             if (!run_again.equals("y"))
             break;
         }
+        object.close();
     }
 }

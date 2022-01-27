@@ -1,5 +1,3 @@
-import javax.lang.model.element.Element;
-
 /**
  * array_for_each_loop_17
  */

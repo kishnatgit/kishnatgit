@@ -11,5 +11,6 @@ public class jv_18_hackerrank_java_end_of_file {
         for (int i = 1; object.hasNext() == true; i++) {
             System.out.println(i + " " + object.nextLine());
         }
+        object.close();
     }
 }

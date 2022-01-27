@@ -1,10 +1,5 @@
 import java.util.Scanner;
 
-/**
- * cwh_practice_qstns_19
- */
-import java.util.Scanner;
-
 public class jv_19_cwh_practice_qstns {
 
     public static void main(String[] args) {
@@ -31,5 +26,6 @@ public class jv_19_cwh_practice_qstns {
             if (!ch.equals("y"))
                 break;
         }
+        scan.close();
     }
 }

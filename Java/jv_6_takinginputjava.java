@@ -11,5 +11,6 @@ public class jv_6_takinginputjava {
         System.out.println(str1);
         System.out.println(str2);
         System.out.println(a);
+        scan.close();
     }
 }

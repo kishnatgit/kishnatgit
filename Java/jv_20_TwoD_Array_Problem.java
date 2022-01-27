@@ -36,5 +36,6 @@ public class jv_20_TwoD_Array_Problem {
             if (!ch.equals("y"))
                 break;
         }
+        scan.close();
     }
 }
