@@ -8,7 +8,7 @@ public class jv_22_Smallest_element_in_array {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int min = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
         System.out.println("Enter the size of Array Required.");
         int n = scan.nextInt();
         int[] arr = new int[n];
@@ -17,7 +17,7 @@ public class jv_22_Smallest_element_in_array {
             arr[i] = scan.nextInt();
         }
         for (int i : arr) {
-            if (i < min)
+            if (i > min)
                 min = i;
         }
         System.out.println("The minimun in Array is:- "+min);
