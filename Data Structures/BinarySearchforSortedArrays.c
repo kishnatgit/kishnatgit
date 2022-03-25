@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-deletion(int array[], int index, int size)
+void deletion(int array[], int index, int size)
 {
     for (int i = index; i < size; i++)
     {
@@ -11,9 +11,9 @@ deletion(int array[], int index, int size)
     }
 }
 
-displayNewArray(int array[], int size)
+void displayNewArray(int array[], int size)
 {
-    printf("The Shorted Array is: ");
+    printf("\nThe Shorted Array is: ");
     for (int i = 0; i < size; i++)
     {
         printf("%d ", array[i]);
@@ -21,7 +21,7 @@ displayNewArray(int array[], int size)
     printf("\n");
 }
 
-arraysorting(int array[], int size)
+void arraysorting(int array[], int size)
 {
     int newSize = size;
     int newarray[newSize];
@@ -73,10 +73,10 @@ void main()
 {
     int array[] = {44, 45, 56654, 56655, 7458, 23545, 25000140, 30084, 789, 1005, 4444444, 2215, 444, 4455, 6458, 7885};
     int size = sizeof(array) / sizeof(int);
-    printf("Sorting The Array.......\n");
+    printf("\nSorting The Array.......\n");
     arraysorting(array, size);
     int element = 23545;
-    printf("Finding The Element %d in the Array.......\n", element);
+    printf("\n\nFinding The Element %d in the Array.......\n", element);
     int found = BinarySearch(array, size, element);
-    printf("The Element %d is found at %d index.", element, found);
+    printf("\n\nThe Element %d is found at %d index.\n\n", element, found);
 }

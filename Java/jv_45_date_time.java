@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -11,5 +12,10 @@ public class jv_45_date_time {
         // returns current date!
         Date d = new Date();
         System.out.println(d);
+        // Calendar
+        Calendar c= Calendar.getInstance();
+        System.out.println(c.getCalendarType());
+        System.out.println(c.getTimeZone().getID());
+        System.err.println(c.getTime());
     }
 }
