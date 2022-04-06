@@ -1,6 +1,3 @@
-
-package Project;
-
 import java.util.*;
 
 class Album {

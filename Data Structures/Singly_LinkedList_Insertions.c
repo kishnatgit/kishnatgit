@@ -91,40 +91,31 @@ void main()
     Five->data = 95;
     Five->next = NULL;
     // LinkedList_display(First);
-    char c = 'y';
-    while (c == 'y')
+    char c;
+    printf("\n\nwhere to Insert? b for At Beginning : e for At End : s for Somewhere in Between : a for After a Node.\n");
+    scanf("%c", &c);
+    getc(stdin);
+    // fgetc(stdin);
+    switch (c)
     {
-        printf("\n\nwhere to Insert? b for At Beginning : e for At End : s for Somewhere in Between : a for After a Node.\n");
-        scanf("%c", &c);
-        getc(stdin);
-        // fgetc(stdin);
-        switch (c)
-        {
-        case 'b':
+    case 'b':
 
-            Insertion_at_beginning(First);
-            break;
+        Insertion_at_beginning(First);
+        break;
 
-        case 'e':
+    case 'e':
 
-            Insertion_at_End(First);
-            break;
+        Insertion_at_End(First);
+        break;
 
-        case 's':
+    case 's':
 
-            Insertion_Somewhere_in_Between(First, 4);
-            break;
+        Insertion_Somewhere_in_Between(First, 4);
+        break;
 
-        case 'a':
+    case 'a':
 
-            Insertion_after_Node(First, Second);
-            break;
-        }
-        printf("Want to Repeat again? [y / n]");
-        scanf("%c", &c);
-        // getc(stdin);
-        fflush(stdin);
-        if (c != 'y')
-            break;
+        Insertion_after_Node(First, Second);
+        break;
     }
 }
