@@ -13,8 +13,8 @@ main()
     for (int n = 0; n <= (num / 2) - 1; n++)
     {
         int temp_n = n;
-        int temp = *(arr + n);
-        *(arr + n) = *(arr + (num - (temp_n + 1)));
+        int temp = arr[n];
+        arr[n] = *(arr + (num - (temp_n + 1)));
         *(arr + (num - (temp_n + 1))) = (temp);
     }
 

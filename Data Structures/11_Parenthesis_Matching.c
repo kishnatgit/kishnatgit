@@ -89,9 +89,9 @@ void main()
 {
     struct stack *stack = NULL;
     // char Array[] = {"(54*1+(125(154/14+))))"};
-    char Array[] = {"[125-658*458)"};
+    // char Array[] = {"[125-658*458)"};
     // char Array[] = {"{))458-214}/[45+85-2"};
-    // char Array[] = {"(145/57)-(4587/235*952+)*2(54+2)"};
+    char Array[] = {"[(145/57)-{(4587/235*952+)}*2(54+2)]"};
     // char Array[] = {"[(145/57)-2{(4587/235*952+)}+12(54+2)]"};
 
     // display_Stack(stack);
@@ -102,4 +102,5 @@ void main()
     {
         printf("\nParenthesis Doesn't Matches!\n\n");
     }
+    getch();
 }
