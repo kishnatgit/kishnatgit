@@ -18,4 +18,4 @@ console.log(x);
 console.log(y);
 console.log(square);
 var square=Greet(x+y);
-console.log(square);
+console.log(square);    
