@@ -14,8 +14,8 @@ let y = function xyz() {
   // named function.
   console.log("A named Function is called.");
 };
-x();
-y();
+//x();
+//y();
 //Note*- The difference betweeen a function statement and a function expression is a function expression allows to declare an anonymous function.
 
 
@@ -23,7 +23,8 @@ y();
 //First class Function or First class Citizen - These are the functions that can be used as values and passed as arguments in a function or the functions that are returned from a function as value or a funtion that can be assigned to a variable as a value are known as First Class Functions.
 let anotherFunction = function (Para1) {
   return function () {// Returned the function as a value.
-    console.log(Para1()());
+    console.log(Para1());
+    console.log(Para1()()*5);
     console.log("Fuction has been returned.");
   };
 };
