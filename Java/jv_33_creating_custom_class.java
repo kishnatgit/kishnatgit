@@ -48,3 +48,18 @@ public class jv_33_creating_custom_class {
         System.out.println("Salary of Emp1 is: " + emp1.get_salary());
     }
 }
+
+
+
+Integer a, b, c
+Set a = 1, b = 5, c = 4
+If ((b & a) < c)
+    a = (c + b) + b
+End If
+If ((b + c) > (a - b) && 1 < a)
+    a = (c & b) + c
+Else
+    b = 4 + c
+End If
+a = (c + 7) + c
+Print a + b + c

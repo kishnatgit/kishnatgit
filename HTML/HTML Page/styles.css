@@ -1,0 +1,24 @@
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-weight: bold;
+  padding: 15px;
+  height: 50px;
+  width: 100%;
+  gap: 15px;
+  box-shadow: 0px 2px 2px 0px grey;
+}
+
+.contents{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.element1{
+    width: 18%;
+    padding: 30px;
+}

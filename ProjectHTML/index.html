@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        padding: 10px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+      }
+      .videoFrame {
+        background-color: black;
+        height: 70vh;
+        width: 80%;
+        border: 10px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      .element1 {
+        background-color: #483285;
+        flex-basis: 20%;
+        height: 70vh;
+      }
+      .element2 {
+        background-color: #e252aa;
+        flex-basis: 20%;
+        height: 70vh;
+      }
+      .element3 {
+        background-color: #fc6280;
+        flex-basis: 20%;
+        height: 70vh;
+      }
+      .element4 {
+        background-color: #f5896c;
+        flex-basis: 20%;
+        height: 70vh;
+      }
+      .element5 {
+        background-color: #fcc755;
+        flex-basis: 20%;
+        height: 70vh;
+      }
+      #start {
+        background-color: #008836;
+        color: white;
+        border: unset;
+        padding: 10px;
+        width: 80px;
+        margin-right: 50px;
+      }
+      #reset {
+        background-color: #744fbf;
+        color: white;
+        border: unset;
+        padding: 10px;
+        width: 80px;
+        margin-right: 50px;
+      }
+      #stop {
+        background-color: #ea1212;
+        color: white;
+        border: unset;
+        padding: 10px;
+        width: 80px;
+      }
+      @keyframes element1Animation {
+        0% {
+          height: 70vh;
+        }
+        20% {
+          height: 20vh;
+        }
+        40% {
+          height: 60vh;
+        }
+        60% {
+          height: 40vh;
+        }
+        80% {
+          height: 30vh;
+        }
+        100% {
+          height: 50vh;
+        }
+      }
+      @keyframes element2Animation {
+        0% {
+          height: 30vh;
+        }
+        40% {
+          height: 60vh;
+        }
+        60% {
+          height: 50vh;
+        }
+        80% {
+          height: 70vh;
+        }
+        100% {
+          height: 20vh;
+        }
+      }
+      @keyframes element3Animation {
+        0% {
+          height: 40vh;
+        }
+        30% {
+          height: 20vh;
+        }
+        50% {
+          height: 50vh;
+        }
+        70% {
+          height: 20vh;
+        }
+        80% {
+          height: 30vh;
+        }
+        90% {
+          height: 60vh;
+        }
+      }
+      @keyframes element4Animation {
+        0% {
+          height: 40vh;
+        }
+        15% {
+          height: 20vh;
+        }
+        35% {
+          height: 60vh;
+        }
+        70% {
+          height: 50vh;
+        }
+        30% {
+          height: 30vh;
+        }
+        80% {
+          height: 30vh;
+        }
+      }
+      @keyframes element5Animation {
+        5% {
+          height: 60vh;
+        }
+        25% {
+          height: 40vh;
+        }
+        40% {
+          height: 30vh;
+        }
+        65% {
+          height: 40vh;
+        }
+        80% {
+          height: 30vh;
+        }
+        100% {
+          height: 50vh;
+        }
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="videoFrame">
+        <div class="element1"></div>
+        <div class="element2"></div>
+        <div class="element3"></div>
+        <div class="element4"></div>
+        <div class="element5"></div>
+      </div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const startButton = document.getElementById("start");
+    const resetButton = document.getElementById("reset");
+    const stopButton = document.getElementById("stop");
+    const bar1 = document.querySelector(".element1");
+    const bar2 = document.querySelector(".element2");
+    const bar3 = document.querySelector(".element3");
+    const bar4 = document.querySelector(".element4");
+    const bar5 = document.querySelector(".element5");
+
+    let animationInterval;
+
+    function startAnimation() {
+      if (animationInterval) {
+        bar1.style.animationPlayState = "running";
+        bar2.style.animationPlayState = "running";
+        bar3.style.animationPlayState = "running";
+        bar4.style.animationPlayState = "running";
+        bar5.style.animationPlayState = "running";
+      }
+      animationInterval = setInterval(function () {
+        bar1.style.animationName = "element1Animation";
+        bar1.style.animationDuration = "5s";
+        bar1.style.animationIterationCount = "infinite";
+
+        bar2.style.animationName = "element2Animation";
+        bar2.style.animationDuration = "5s";
+        bar2.style.animationIterationCount = "infinite";
+
+        bar3.style.animationName = "element3Animation";
+        bar3.style.animationDuration = "5s";
+        bar3.style.animationIterationCount = "infinite";
+
+        bar4.style.animationName = "element4Animation";
+        bar4.style.animationDuration = "5s";
+        bar4.style.animationIterationCount = "infinite";
+
+        bar5.style.animationName = "element5Animation";
+        bar5.style.animationDuration = "5s";
+        bar5.style.animationIterationCount = "infinite";
+      }, 0);
+    }
+
+    function stopAnimation() {
+      clearInterval(animationInterval);
+
+      bar1.style.animationPlayState = "paused";
+      bar2.style.animationPlayState = "paused";
+      bar3.style.animationPlayState = "paused";
+      bar4.style.animationPlayState = "paused";
+      bar5.style.animationPlayState = "paused";
+    }
+
+    function resetBars() {
+      clearInterval(animationInterval);
+      bar1.style.animation = "none";
+      bar1.offsetHeight;
+      bar1.style.animation = "";
+
+      bar2.style.animation = "none";
+      bar2.offsetHeight;
+      bar2.style.animation = "";
+
+      bar3.style.animation = "none";
+      bar3.offsetHeight;
+      bar3.style.animation = "";
+
+      bar4.style.animation = "none";
+      bar4.offsetHeight;
+      bar4.style.animation = "";
+
+      bar5.style.animation = "none";
+      bar5.offsetHeight;
+      bar5.style.animation = "";
+    }
+
+    startButton.addEventListener("click", startAnimation);
+    stopButton.addEventListener("click", stopAnimation);
+    resetButton.addEventListener("click", resetBars);
+  </script>
+</html>
