@@ -4,5 +4,6 @@
     "random": "c"
   },
   "cmake.configureOnOpen": false,
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true
 }

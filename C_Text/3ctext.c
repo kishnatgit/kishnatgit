@@ -1,7 +1,7 @@
-#include<stdio.h>
-main()
+#include <stdio.h>
+void main()
 {
-    char ss='z';
-    printf("  %c =",ss);
-    printf(" %d  ",ss);
+    char ss = 'z';
+    printf("  %c =", ss);
+    printf(" %d  ", ss);
 }

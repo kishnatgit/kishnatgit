@@ -1,0 +1,10 @@
+.Button-Left {
+  margin-top: 10px;
+  display: inline-grid;
+}
+
+.Button-Right {
+  margin-top: 10px;
+  display: inline-grid;
+  margin-left: 40%;
+}
