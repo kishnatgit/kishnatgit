@@ -38,7 +38,7 @@ export default class ToDoInput extends React.Component {
         <div className="Button-Left">
           <div>
             <input
-              style={{ width: "130%" }}
+              style={{ width: "130%", height: "4vh" }}
               type="text"
               value={this.state.texts}
               onChange={(e) => {
@@ -53,7 +53,7 @@ export default class ToDoInput extends React.Component {
         <div className="Button-Right">
           <div>
             <input
-              style={{ width: "130%" }}
+              style={{ width: "130%", height: "4vh" }}
               type="text"
               value={this.state.searchedText}
               onChange={(e) => this.setState({ searchedText: e.target.value })}
